@@ -1,0 +1,27 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 70px;
+    background-image: url("https://tse1.mm.bing.net/th?id=OIP._vyAUl2GGeNwMLw0bDnfhgHaEo&pid=Api&P=0");
+    background-repeat: no-repeat;
+    object-fit: cover;
+    background-size: cover;
+}
+h1{
+    
+    background-image: url("https://tse3.mm.bing.net/th?id=OIP.GZtp-qMxM_MjrbBshZ5zmAHaEK&pid=Api&P=0");
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    cursor: pointer;
+}
+.content{
+    margin-top: 100px;
+}

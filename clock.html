@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Clock</title>
+    <link rel="stylesheet" href="clockstyle.css">
+</head>
+<body>
+    <div class="container">
+        <div class="content">
+            <h1 id="clock"></h1>
+        </div>
+    </div>
+    <script>
+        function time(){
+        var d=new Date();
+        var h=d.getHours();
+        var m=d.getMinutes();
+        var s=d.getSeconds();
+        var unit=(h>=12 ? "PM" :"AM");
+        if(h>12)
+        {
+            h="0"+(h-12);
+            
+        }
+        if(m<10)
+        {
+            m="0"+m;
+        }
+        if(s<10)
+        {
+            s="0"+s;
+        }
+        document.getElementById('clock').innerText= h+" : "+m+" : "+s+" "+unit;
+        }
+        setInterval(() => {
+            time();
+        }, 1000);
+    </script>
+</body>
+</html>
